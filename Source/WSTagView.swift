@@ -53,6 +53,13 @@ open class WSTagView: UIView {
         }
     }
 
+    open override var layoutMargins: UIEdgeInsets {
+        get {
+            return UIEdgeInsets(top: 0, left: 0, bottom: 9, right: 0)
+        }
+        set {}
+    }
+    
     open override var tintColor: UIColor! {
         didSet { updateContent(animated: false) }
     }

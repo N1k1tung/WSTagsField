@@ -642,7 +642,7 @@ extension WSTagsField {
 
             tagRect.origin.x = curX
             // Center our tagView vertically within STANDARD_ROW_HEIGHT
-            tagRect.origin.y = curY + ((Constants.STANDARD_ROW_HEIGHT - tagRect.height)/2.0)
+            tagRect.origin.y = curY + ((Constants.STANDARD_ROW_HEIGHT - tagRect.height)/2.0) + tagView.layoutMargins.top
 
             closure(tagView, tagRect, nil)
 
